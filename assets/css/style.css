@@ -1,3 +1,7 @@
+/* var dark color #C3DFE0 
+    var light color #E1E5F2
+
+*/    
 * {
     box-sizing: border-box;
   }
@@ -20,6 +24,9 @@
   h6 {
     font-size: 20px;
     margin: 0;
+  }
+  div {
+    border: 1px solid black;
   }
   
   p {
