@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   .avatar {
     display: block;
@@ -83,12 +83,15 @@ a:active {
   align-items: center;
   margin: 20px;
   text-decoration: none;
-  color: black;
+  color:#004aad;
 }
   
   h1,
   h2 {
+    color: #004aad;
     font-size: 36px;
+    text-decoration: underline;
+    border-radius: 25%;
   }
   h3 {
     font-size: 20px;
@@ -142,15 +145,16 @@ a:active {
   }
   .flex-item div {
     background-color: rgb(101, 196, 191);
-    padding: 0 10px;
+    padding: 10px 20px;
     margin-bottom: 20px;
   }
   @media screen and (max-width: 768px) { 
     .flex-item {
       flex-basis: 100%;
     }
-    .flex-item:first-child {
-      max-height: 150px;
-    }
-  }
+    
   
+  .flex-item:first-child {
+    max-height: 150px;
+  }
+}
