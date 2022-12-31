@@ -1,37 +1,37 @@
 /* var dark color #C3DFE0 
     var light color #E1E5F2
 
-*/ 
+*/
 
 * {
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
- 
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.2;
-  }
-  .avatar {
-    display: inline-flex;
-    align-content: center;
-    width: 250px;
-    height: 250px;
-    border-radius: 20%;
-    border: solid #004aad 5px;
-    margin-left: -60px;
-  }
-  .name {
-    display: block;
-    justify-content: flex-start;
-    min-width: auto;
-  }
-  /* Navigation CSS */
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.2;
+}
+.avatar {
+  display: block;
+  align-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  border: solid #004aad 5px;
+  margin-left: -60px;
+}
+.name {
+  display: block;
+  justify-content: flex-start;
+  min-width: auto;
+}
+/* Navigation CSS */
 
 #navBar {
   display: flex;
@@ -67,7 +67,8 @@
   margin: 15px;
   cursor: pointer;
 }
-a, ul a{
+a,
+ul a {
   text-decoration: none;
   color: #004aad;
 }
@@ -83,76 +84,75 @@ a:active {
   align-items: center;
   margin: 20px;
   text-decoration: none;
-  color:#004aad;
+  color: #004aad;
 }
-  
-  h1,
-  h2 {
-    color: #004aad;
-    font-size: 36px;
-    text-decoration: underline;
-    border-radius: 25%;
-    margin: 20px;
-  }
-  h3 {
-    font-size: 20px;
-    margin: 0;
-  }
-  
-  
-  p {
-    margin: 10px;
-    font-size: 20px;
-  }
-  .project1 {
-    background-image: url("../images/02-portfolio-3.jpg");
-    background-repeat: no-repeat;
-  }
-  .project2 {
-    background-image: url("../images/02-portfolio-1.jpg");
-    background-repeat: no-repeat;
-  }
-  .project3 {
-    background-image: url("../images/02-portfolio-1.jpg");
-    background-repeat: no-repeat;
-  }
-  .project4 {
-    background-image: url("../images/02-portfolio-1.jpg");
-    background-repeat: no-repeat;
-  }
-  .project5 {
-    background-image: url("../images/02-portfolio-1.jpg");
-    background-repeat: no-repeat;
-  }
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 75%;
-  }
+
+h1,
+h2 {
+  color: #004aad;
+  font-size: 36px;
+  text-decoration: underline;
+  border-radius: 25%;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+p {
+  margin: 10px;
+  font-size: 20px;
+}
+.project1 {
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-repeat: no-repeat;
+}
+.project2 {
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+}
+.project3 {
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+}
+.project4 {
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+}
+.project5 {
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 75%;
+}
+.flex-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  margin: 0.5em;
+  max-height: 150px;
+  border: solid 4px black;
+}
+.flex-item:first-child {
+  min-height: 300px;
+  flex-basis: 100%;
+}
+.flex-item div {
+  background-color: rgb(101, 196, 191);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
   .flex-item {
-    display: flex;
-    align-items: flex-end;
-    flex-basis: calc(50% - 1em);
-    margin: .5em;
-    max-height: 150px;
-    border: solid 4px black;
-  }
-  .flex-item:first-child {
-    min-height: 300px;
     flex-basis: 100%;
   }
-  .flex-item div {
-    background-color: rgb(101, 196, 191);
-    padding: 10px 20px;
-    margin-bottom: 20px;
-  }
-  @media screen and (max-width: 768px) { 
-    .flex-item {
-      flex-basis: 100%;
-    }
-    
-  
+
   .flex-item:first-child {
     max-height: 150px;
   }
