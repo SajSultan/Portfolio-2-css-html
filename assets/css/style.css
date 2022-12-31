@@ -79,5 +79,8 @@
     .flex-item {
       flex-basis: 100%;
     }
+    .flex-item:first-child {
+      min-height: 150px;
+    }
   }
   
