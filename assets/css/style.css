@@ -32,4 +32,41 @@
   p {
     margin: 0;
   }
+  .project1 {
+    background-image: url("../images/02-hero-bg.jpg");
+    background-repeat: no-repeat;
+  }
+  .project2 {
+    background-image: url("../images/02-portfolio-1.jpg");
+    background-repeat: no-repeat;
+  }
+  .project3 {
+    background-image: url("../images/02-portfolio-1.jpg");
+    background-repeat: no-repeat;
+  }
+  .project4 {
+    background-image: url("../images/02-portfolio-1.jpg");
+    background-repeat: no-repeat;
+  }
+  .project5 {
+    background-image: url("../images/02-portfolio-1.jpg");
+    background-repeat: no-repeat;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .flex-item {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: calc(50% - 1em);
+    margin: .5em;
+  }
+  .flex-item div {
+    background-color: lightgreen;
+    padding: 10px;
+
+
+  }
   
