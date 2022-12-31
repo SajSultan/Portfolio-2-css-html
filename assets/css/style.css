@@ -18,13 +18,13 @@
     line-height: 1.2;
   }
   .avatar {
-    display: block;
-    align-content: flex-start;
-    width: 150px;
-    height: 150px;
+    display: inline-flex;
+    align-content: center;
+    width: 250px;
+    height: 250px;
     border-radius: 20%;
     border: solid #004aad 5px;
-    margin: 10px;
+    margin-left: -60px;
   }
   .name {
     display: block;
@@ -32,7 +32,7 @@
     min-width: auto;
   }
   /* Navigation CSS */
-/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
 #navBar {
   display: flex;
   flex-direction: row;
@@ -67,9 +67,9 @@
   margin: 15px;
   cursor: pointer;
 }
-a {
+a, ul a{
   text-decoration: none;
-  color: black;
+  color: #004aad;
 }
 a:hover {
   color: orangered;
@@ -92,14 +92,13 @@ a:active {
     font-size: 36px;
     text-decoration: underline;
     border-radius: 25%;
+    margin: 20px;
   }
   h3 {
     font-size: 20px;
     margin: 0;
   }
-  div {
-    border: 1px solid black;
-  }
+  
   
   p {
     margin: 10px;
