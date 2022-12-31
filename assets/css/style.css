@@ -1,13 +1,15 @@
 /* var dark color #C3DFE0 
     var light color #E1E5F2
 
-*/    
+*/ 
+
 * {
     box-sizing: border-box;
   }
   html {
     scroll-behavior: smooth;
   }
+ 
   
   body {
     margin: 0;
@@ -15,13 +17,80 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
   }
+  .avatar {
+    display: block;
+    align-content: flex-start;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: solid #004aad 5px;
+    margin: 10px;
+  }
+  .name {
+    display: block;
+    justify-content: flex-start;
+    min-width: auto;
+  }
+  /* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#navigation p {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero-bg {
+  background-image: url(../images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin-right: auto;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: orangered;
+}
+a:active {
+  color: purple;
+}
+#navigation li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+}
   
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
     font-size: 20px;
     margin: 0;
   }
@@ -30,7 +99,8 @@
   }
   
   p {
-    margin: 0;
+    margin: 10px;
+    font-size: 20px;
   }
   .project1 {
     background-image: url("../images/02-portfolio-3.jpg");
@@ -56,13 +126,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 75%;
   }
   .flex-item {
     display: flex;
     align-items: flex-end;
     flex-basis: calc(50% - 1em);
     margin: .5em;
-    min-height: 150px;
+    max-height: 150px;
     border: solid 4px black;
   }
   .flex-item:first-child {
@@ -70,17 +141,16 @@
     flex-basis: 100%;
   }
   .flex-item div {
-    background-color: lightgreen;
-    padding: 10px;
-
-
+    background-color: rgb(101, 196, 191);
+    padding: 0 10px;
+    margin-bottom: 20px;
   }
   @media screen and (max-width: 768px) { 
     .flex-item {
       flex-basis: 100%;
     }
     .flex-item:first-child {
-      min-height: 150px;
+      max-height: 150px;
     }
   }
   
